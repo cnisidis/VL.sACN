@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" Id="JYgHnmX1E5pLUoMV9Ab7Bt" LanguageVersion="2021.4.9.949" Version="0.128">
+  <Patch Id="TKptWTyFo6JPJ3reVSEacT">
+    <Canvas Id="JdgqtZ2TRElNFxABKO1368" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
+    <!--
+
+    ************************ Application ************************
+
+-->
+    <Node Name="Application" Bounds="100,100" Id="TL8vYnFJSy0NTJtbNm5ZJI">
+      <p:NodeReference>
+        <Choice Kind="ContainerDefinition" Name="Process" />
+        <FullNameCategoryReference ID="Primitive" />
+      </p:NodeReference>
+      <Patch Id="E75M88awRODNCxhGZxM9Ls">
+        <Canvas Id="OUbi16thNaBLiJKrPyQXIV" CanvasType="Group">
+          <Node Bounds="335,72" Id="T62aMohlBFqNTlsBWPIRQp">
+            <p:NodeReference LastCategoryFullName="Reactive" LastSymbolSource="VL.Reactive.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="HoldLatest" />
+            </p:NodeReference>
+            <Pin Id="GitgR1Z81dfLPjBG30cBKX" Name="Async Notifications" Kind="InputPin" />
+            <Pin Id="K2dD8hTbopILucOdlXSpZc" Name="Reset" Kind="InputPin" />
+            <Pin Id="NHg2g6HbuJCNH0ftPLYsvS" Name="Value" Kind="OutputPin" />
+            <Pin Id="MiHRK64oLVFQdxMtQdFb3p" Name="On Data" Kind="OutputPin" />
+          </Node>
+          <Pad Id="QvC296EnfPmPM79k1Jkv00" Comment="" Bounds="336,163,175,39" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="RziW8oz151BMZfWikDajB9" Comment="On Data" Bounds="429,116,35,35" ShowValueBox="true" isIOBox="true" />
+          <Node Bounds="335,20,95,19" Id="VZSRKUb4sZgOjGQwsPSe6n">
+            <p:NodeReference LastCategoryFullName="VL.sACN" LastSymbolSource="VL.sACN.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="MulticastReceiver" />
+            </p:NodeReference>
+            <Pin Id="FkhDbAMd2zFPEUQgh4yxMh" Name="Universe" Kind="InputPin" DefaultValue="241" />
+            <Pin Id="CdqGgexGYLaMXnHCLACGKT" Name="Source" Kind="OutputPin" />
+          </Node>
+        </Canvas>
+        <Patch Id="KKKb3wiqyvKOlwmnZ8s7b2" Name="Create" />
+        <Patch Id="JgAcXTiX5GiQWP4eCzeLGs" Name="Update" />
+        <ProcessDefinition Id="USOWGzgBTcZM1b7qijCbFb">
+          <Fragment Id="FLu8lrJNC2rOLE89iWCW1l" Patch="KKKb3wiqyvKOlwmnZ8s7b2" Enabled="true" />
+          <Fragment Id="EVayRAr5Q9fOJg3kpm8hDA" Patch="JgAcXTiX5GiQWP4eCzeLGs" Enabled="true" />
+        </ProcessDefinition>
+        <Link Id="AK59B6U41vXNZe1ppbEm64" Ids="NHg2g6HbuJCNH0ftPLYsvS,QvC296EnfPmPM79k1Jkv00" />
+        <Link Id="TusGhXQYpUxO38VJhIx10s" Ids="MiHRK64oLVFQdxMtQdFb3p,RziW8oz151BMZfWikDajB9" />
+        <Link Id="E6EEYPg9HtVN3aFoFEUtt0" Ids="CdqGgexGYLaMXnHCLACGKT,GitgR1Z81dfLPjBG30cBKX" />
+      </Patch>
+    </Node>
+  </Patch>
+  <NugetDependency Id="AOIL0Ws1e5pPxD3SQ9gNqm" Location="VL.CoreLib" Version="2021.4.9-0949-g67598d91aa" />
+  <NugetDependency Id="UHTGg7nr9rxMqm0pioC93Z" Location="VL.sACN" Version="0.0.0.0" />
+</Document>
