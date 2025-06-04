@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="RAoyGF6cE4POsFAxOvGpVs" LanguageVersion="2024.6.3-0001-g5adacc4504" Version="0.128">
-  <NugetDependency Id="Rx7uzUngbRNOqWbjCzCJY5" Location="VL.CoreLib" Version="2024.6.3-0001-g5adacc4504" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="RAoyGF6cE4POsFAxOvGpVs" LanguageVersion="2025.7.0-0305-g98ea128603" Version="0.128">
+  <NugetDependency Id="Rx7uzUngbRNOqWbjCzCJY5" Location="VL.CoreLib" Version="2025.7.0-0305-g98ea128603" />
   <Patch Id="QiCUhiNFHCNLgFreHQy3RY">
     <Canvas Id="QewNvuwLFIiMOh5vfLdlH5" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
     <!--
@@ -15,7 +15,7 @@
       </p:NodeReference>
       <Patch Id="TYfrcfatGquMTvA4RJsW2V">
         <Canvas Id="H1CyTfNAB8QL5E0d3npf0d" CanvasType="Group">
-          <Node Bounds="1167,687,125,19" Id="J7qhOSxxX4UNjwkT4oJEyP">
+          <Node Bounds="1167,687,145,19" Id="J7qhOSxxX4UNjwkT4oJEyP">
             <p:NodeReference LastCategoryFullName="Graphics.Skia" LastDependency="VL.Skia.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Renderer" />
@@ -26,6 +26,7 @@
             <Pin Id="LrS6ButITo4LiavHXjF4Di" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="AsgvorhsmLyN2Wr0itvNJc" Name="Dialog If Document Changed" Kind="InputPin" IsHidden="true" />
             <Pin Id="Gut58OMr1mZMgHYRfKEQzj" Name="Input" Kind="InputPin" />
+            <Pin Id="QRs541LtyzCPBDXvMJ10fR" Name="Title" Kind="InputPin" />
             <Pin Id="SNl7iVeRCCIM84zFCv7xUM" Name="Color" Kind="InputPin" />
             <Pin Id="GDFuQeYlSFvMw1Q3LhLkN3" Name="Clear" Kind="InputPin" />
             <Pin Id="BDltPnCcMWoNQ3OUYLuMNM" Name="Space" Kind="InputPin" />
@@ -101,7 +102,7 @@
                             <Patch Id="UVBDSOJHnlgQFg7A2quKYk" ManuallySortedPins="true">
                               <Patch Id="PjQCIgBXq2uPZ66p6Kgz0e" Name="Create" ManuallySortedPins="true" />
                               <Patch Id="Ts52M5YV34jQIGdLRQQw4d" Name="Then" ManuallySortedPins="true" />
-                              <Node Bounds="1396,426,87,80" Id="Bj6F2nICgA7PIgAOlZ9pEX">
+                              <Node Bounds="1396,425,87,80" Id="Bj6F2nICgA7PIgAOlZ9pEX">
                                 <p:NodeReference LastCategoryFullName="ImGui.Widgets" LastDependency="VL.ImGui.Skia.vl">
                                   <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                                   <CategoryReference Kind="Category" Name="ImGui" />
@@ -120,6 +121,7 @@
                                     <Pin Id="CIXNmqBtjJiOx6QpRcMC0j" Name="Output" Kind="StateOutputPin" />
                                     <Pin Id="VLHRrgX8DWWLRDwzywrmkY" Name="Context" Kind="OutputPin" />
                                   </Node>
+                                  <Patch Id="F6camMDBovcOU4FPL1D555" Name="Dispose" />
                                 </Patch>
                                 <Pin Id="CZmbq1ieWaUQI44ov7tsAR" Name="Node Context" Kind="InputPin" IsHidden="true" />
                                 <Pin Id="JopX0LOto56QUFuHhrQ1A5" Name="Context" Kind="InputPin" />
@@ -165,6 +167,7 @@
                           </Node>
                         </Patch>
                       </Node>
+                      <Patch Id="RxTHcn4Ir0qPPCFazvCo7T" Name="Dispose" />
                     </Patch>
                     <Pin Id="LWFJ32bgXLWMtBFSfoEWEH" Name="Node Context" Kind="InputPin" IsHidden="true" />
                     <Pin Id="DhdAySOUZBgMNoe0tzjRij" Name="Context" Kind="InputPin" />
@@ -173,6 +176,7 @@
                     <Pin Id="Sg6MwjxANSKLPKlVWFUW7W" Name="Flags" Kind="InputPin" />
                     <Pin Id="Nsub0wO2hIkP5IhDbPMPHt" Name="Context" Kind="OutputPin" />
                   </Node>
+                  <Patch Id="ViOupGDJdWXP8kUEuh3C0Y" Name="Dispose" />
                 </Patch>
                 <Pin Id="MzcgefJdnSFQWJeheZUoYu" Name="Node Context" Kind="InputPin" IsHidden="true" />
                 <Pin Id="EHFI0MnBm9IPSR6Ei51vPl" Name="Context" Kind="InputPin" />
@@ -188,6 +192,7 @@
                 <Pin Id="AqLHLRmN9uXQMu5mfCD3ip" Name="Close Clicked" Kind="OutputPin" />
                 <Pin Id="FcuqAmbfIVWNwM5wncAdM7" Name="Content Is Visible" Kind="OutputPin" />
               </Node>
+              <Patch Id="QkaE1Z8MhugPp7KKa7ysgr" Name="Dispose" />
             </Patch>
           </Node>
           <Node Bounds="513,100,54,19" Id="TfUfboMh3nJQIqhgtwoWtz">
@@ -196,7 +201,9 @@
               <Choice Kind="ProcessAppFlag" Name="Receiver (Multicast)" />
             </p:NodeReference>
             <Pin Id="EpSh0wIu3QDPLZnsdY30ew" Name="Node Context" Kind="InputPin" IsHidden="true" />
-            <Pin Id="NbpXephst11PmRyZiOQeM2" Name="Addresses" Kind="InputPin" />
+            <Pin Id="QYqft2rKPnyMReuR4oCUTY" Name="IP Address" Kind="InputPin" />
+            <Pin Id="ND7fokZ7TqXNRA0PcvZyLN" Name="Port" Kind="InputPin" />
+            <Pin Id="KeXtzwuqLRyPw3PJYoc6yl" Name="Multicast IPs" Kind="InputPin" />
             <Pin Id="GxSmHIl2uVWNjul7ofwhEC" Name="Datagrams" Kind="OutputPin" />
           </Node>
           <Pad Id="StYxy3xKeUTPSDsT1rDYfX" Bounds="229,88,157,49" ShowValueBox="true" isIOBox="true">
@@ -519,6 +526,7 @@
                         <Choice Kind="TypeFlag" Name="ImGuiTableColumnFlags" />
                       </p:TypeAnnotation>
                     </Pad>
+                    <Patch Id="VlOrXn8uJB3QILYcwmCcB7" Name="Dispose" />
                   </Patch>
                 </Node>
                 <Pad Id="VjDcaLlLuzWPOf2zUkCVXl" SlotId="CQcLimBBODRMXsKqPHIvlb" Bounds="2581,299" />
@@ -867,6 +875,7 @@
                   <Pin Id="PmTtWlJrtpONGXxyC7LAxP" Name="Node Context" Kind="InputPin" IsHidden="true" />
                   <Pin Id="Jv4cIr04krrN6Rc5sjX0ha" Name="Messages" Kind="InputPin" />
                   <Pin Id="K4MQK7tVY0AQECZOnKW5zs" Name="Reset" Kind="InputPin" />
+                  <Pin Id="InPZ5o15eOoLTa9gXOfQry" Name="Output" Kind="OutputPin" IsHidden="true" />
                   <Pin Id="KzChj5dcFEnPUlH5kPsUau" Name="Result" Kind="OutputPin" />
                   <Patch Id="R74kT59pRgWNqVDaENHumn" ManuallySortedPins="true">
                     <Patch Id="SApTUj7yRHYO7pSFLu5mnC" Name="Create" ManuallySortedPins="true" />
@@ -972,11 +981,6 @@
                 <ControlPoint Id="UI9R8d1fjGWMaR2wpVjQUp" Bounds="1139,225" />
                 <ControlPoint Id="SnAv6Sc4VqAPuSy9MNAmUa" Bounds="818,232" />
               </Canvas>
-              <!--
-
-    ************************  ************************
-
--->
               <ProcessDefinition Id="RtABm9khQOQLjNz88LoueB">
                 <Fragment Id="BZAc6LYB29SMHeeNj6tpAx" Patch="HwYnbupXGYALEYvrYrW2fO" Enabled="true" />
                 <Fragment Id="A1CX3T5BDHgMXVXNmuwo4g" Patch="EpDrnYNmFFZL4WcuLMot7g" Enabled="true" />
@@ -1043,13 +1047,13 @@
         <Link Id="ECUZqYWPeMENAllAR2zL2n" Ids="RRw6cnHIkBxNyFABPMpZgv,CzN1AMjpLRTLS2aTDJJSrD" />
         <Link Id="ICWkEaApt6QNyRrM8zy3AI" Ids="Dch3iQUa2lFLmbhbPOsA8s,NoqqnDLzHbrLZoKuaYAK6g" />
         <Link Id="LJZfN25jmE5PmOLHhOqO0i" Ids="Me8UDpaX05dOIQJwpz7rwG,QYLq3msRc8bOFOKYLzipyx" />
-        <Link Id="Lq5HbyAMAPNMcFVaYi8Rsb" Ids="QYLq3msRc8bOFOKYLzipyx,NbpXephst11PmRyZiOQeM2" />
         <Link Id="DwqT4mlFYpVNf30ekkZzBS" Ids="E9i7EtJOhPgNzN078RHp3w,AuzARB02BGmNnn8wJzXl7C" />
         <Link Id="SKCnyzGV4EfMZrfz3b440t" Ids="RmW41hEEnvPOwfe7c9ATkr,CqYuP4bZys2McWZRuEKHwf" />
+        <Link Id="FGkPWsx1M6dLOkB2EwkoNp" Ids="QYLq3msRc8bOFOKYLzipyx,KeXtzwuqLRyPw3PJYoc6yl" />
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="BDEkOnIPmMiPP4pkjlBLEV" Location="VL.ImGui.Skia" Version="2024.6.3-0001-g5adacc4504" />
-  <NugetDependency Id="QeCcS54vl26NcIxoMIdjDZ" Location="VL.Skia" Version="2024.6.3-0001-g5adacc4504" />
+  <NugetDependency Id="BDEkOnIPmMiPP4pkjlBLEV" Location="VL.ImGui.Skia" Version="2025.7.0-0305-g98ea128603" />
+  <NugetDependency Id="QeCcS54vl26NcIxoMIdjDZ" Location="VL.Skia" Version="2025.7.0-0305-g98ea128603" />
   <NugetDependency Id="JAzTBayM7t7NWfqBNhW4qf" Location="VL.sACN" Version="0.0.0" />
 </Document>
