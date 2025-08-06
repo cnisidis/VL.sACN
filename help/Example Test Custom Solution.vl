@@ -287,6 +287,15 @@
             <Pin Id="VvcIOjjECQoL8Z1JPoFEAt" Name="Input" Kind="StateInputPin" />
             <Pin Id="BwyYluWfvCjMHVfpzHYJXi" Name="Output" Kind="StateOutputPin" />
           </Node>
+          <Node Bounds="1267,331,47,19" Id="F1YBbzf1awVQLetyxNp6sZ">
+            <p:NodeReference LastCategoryFullName="IO.Socket" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="Sender (Datagram)" />
+            </p:NodeReference>
+            <Pin Id="RHMaA0iT4JuOqRKnvHx53J" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="O7ZNmPvhWUOQZXy3QzQe0v" Name="Local Socket" Kind="InputPin" />
+            <Pin Id="D5VEWnpDcPYM8uilSZCKaH" Name="Datagrams" Kind="InputPin" />
+          </Node>
         </Canvas>
         <Patch Id="IpUpCBC4cvuLGGmlb4hlEl" Name="Create" />
         <Patch Id="GK65o6XkdeEOEeg5o9Vrgh" Name="Update" />

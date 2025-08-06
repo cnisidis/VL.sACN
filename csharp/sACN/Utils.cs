@@ -12,6 +12,22 @@ namespace sACN
     public static class Utils
     {
         public const int PORT = 5568;
+        public const int MAXUNIVERSE = 63999;
+        public const int MINUNIVERSE = 1;
+        public const int MINSLOTS = 1;
+        public const int MAXSLOTS = 512;
+        const byte E131_DEFAULT_PRIORITY = 0x64;
+
+        /* E1.31 Private Constants */
+        public const ushort _E131_PREAMBLE_SIZE = 0x0010;
+        public const ushort _E131_POSTAMBLE_SIZE = 0x0000;
+        public static readonly byte[] _E131_ACN_PID = { 0x41, 0x53, 0x43, 0x2d, 0x45, 0x31, 0x2e, 0x31, 0x37, 0x00, 0x00, 0x00 };
+        const uint _E131_ROOT_VECTOR = 0x00000004;
+        const uint _E131_FRAME_VECTOR = 0x00000002;
+        const byte _E131_DMP_VECTOR = 0x02;
+        const byte _E131_DMP_TYPE = 0xa1;
+        const ushort _E131_DMP_FIRST_ADDR = 0x0000;
+        const ushort _E131_DMP_ADDR_INC = 0x0001;
         public static T Deserialize<T>(byte[] data) where T : struct
         {
             // Allocate a GCHandle to "pin" the byte array in memory,
@@ -56,9 +72,9 @@ namespace sACN
         public static APacket DeserializeAPacket(byte[] data)
         {
             var packet = new APacket();
-            packet.RootLayer = Deserialize<ARootLayer>(data);
-            packet.FramingLayer = Deserialize<AFramingLayer>(data.Skip(38).ToArray());
-            packet.DMPLayer = Deserialize<ADMPLayer>(data.Skip(38+77).ToArray());
+            packet.Root = Deserialize<ARootLayer>(data);
+            packet.Frame = Deserialize<AFramingLayer>(data.Skip(38).ToArray());
+            packet.DMP = Deserialize<ADMPLayer>(data.Skip(38+77).ToArray());
             return packet;
         }
 
@@ -83,12 +99,13 @@ namespace sACN
             return combinedFlength;
         }
     }
-
+    
     public class APacket
     {
-        public ARootLayer RootLayer;
-        public AFramingLayer FramingLayer;
-        public ADMPLayer DMPLayer;
+        
+        public ARootLayer Root;
+        public AFramingLayer Frame;
+        public ADMPLayer DMP;
 
         private string Identifier = "ASC - E1.17";
         private byte[] Values;
@@ -101,9 +118,9 @@ namespace sACN
         public APacket() { }
         public APacket(string Name, int Priority = 100)
         {
-            this.RootLayer = new ARootLayer();
-            this.FramingLayer = new AFramingLayer();
-            this.DMPLayer = new ADMPLayer();
+            this.Root = new ARootLayer();
+            this.Frame = new AFramingLayer();
+            this.DMP = new ADMPLayer();
             this.CID = new Guid();
             this.Priority = Priority;
             this.Name = Name;
@@ -111,9 +128,9 @@ namespace sACN
 
         public void Split(out ARootLayer RootLayer, out AFramingLayer FramingLayer, out ADMPLayer DMPLayer)
         {
-            RootLayer = this.RootLayer;
-            FramingLayer = this.FramingLayer;
-            DMPLayer = this.DMPLayer;
+            RootLayer = this.Root;
+            FramingLayer = this.Frame;
+            DMPLayer = this.DMP;
         }
 
 
