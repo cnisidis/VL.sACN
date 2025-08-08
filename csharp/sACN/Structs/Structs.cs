@@ -3,34 +3,14 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
+using System.Net;
 using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace sACN
+namespace sACN.Structs
 {
-    public enum FramingOptionsType
-    {
-        E131_OPT_TERMINATED = 6,
-        E131_OPT_PREVIEW = 7,
-
-    }
-
-    public enum ErrorType
-    {
-        E131_ERR_NONE,
-        E131_ERR_NULLPTR,
-        E131_ERR_PREAMBLE_SIZE,
-        E131_ERR_POSTAMBLE_SIZE,
-        E131_ERR_ACN_PID,
-        E131_ERR_VECTOR_ROOT,
-        E131_ERR_VECTOR_FRAME,
-        E131_ERR_VECTOR_DMP,
-        E131_ERR_TYPE_DMP,
-        E131_ERR_FIRST_ADDR_DMP,
-        E131_ERR_ADDR_INC_DMP,
-
-    }
+    
 
     [StructLayout(LayoutKind.Sequential, Pack = 1, CharSet = CharSet.Ansi)]
     public struct ARootLayer
@@ -72,6 +52,29 @@ namespace sACN
 
 
         }
+
+        // Helper for endianness conversion (Host to Network)
+        public ARootLayer ToNetworkOrder()
+        {
+            ARootLayer networkOrderLayer = this;
+            networkOrderLayer.preamble_size = (ushort)IPAddress.HostToNetworkOrder((short)preamble_size);
+            networkOrderLayer.postamble_size = (ushort)IPAddress.HostToNetworkOrder((short)postamble_size);
+            networkOrderLayer.flength = (ushort)IPAddress.HostToNetworkOrder((short)flength);
+            networkOrderLayer.vector = (uint)IPAddress.HostToNetworkOrder((int)vector);
+            // acn_pid and cid are byte arrays, individual bytes don't need endianness swap
+            return networkOrderLayer;
+        }
+
+        // Helper for endianness conversion (Network to Host)
+        public ARootLayer ToHostOrder()
+        {
+            ARootLayer hostOrderLayer = this;
+            hostOrderLayer.preamble_size = (ushort)IPAddress.NetworkToHostOrder((short)preamble_size);
+            hostOrderLayer.postamble_size = (ushort)IPAddress.NetworkToHostOrder((short)postamble_size);
+            hostOrderLayer.flength = (ushort)IPAddress.NetworkToHostOrder((short)flength);
+            hostOrderLayer.vector = (uint)IPAddress.NetworkToHostOrder((int)vector);
+            return hostOrderLayer;
+        }
     }
     [StructLayout(LayoutKind.Sequential, Pack = 1, CharSet = CharSet.Ansi)]
     public struct AFramingLayer
@@ -93,7 +96,7 @@ namespace sACN
 
         public int GetSeqNumber()
         {
-            return (int)seq_number;
+            return seq_number;
         }
 
         public int GetUniverse()
@@ -115,10 +118,31 @@ namespace sACN
         public void Split(out string Name, out int Universe, out int SeqNumber, out FramingOptionsType Type, out int Priority)
         {
             Name = GetName();
-            Universe = (int)this.universe;
-            SeqNumber = (int)this.seq_number;   
+            Universe = universe;
+            SeqNumber = seq_number;   
             Type = (FramingOptionsType)options;
-            Priority = (int)this.priority;
+            Priority = priority;
+        }
+
+        public AFramingLayer ToNetworkOrder()
+        {
+            AFramingLayer networkOrderLayer = this;
+            networkOrderLayer.flength = (ushort)IPAddress.HostToNetworkOrder((short)flength);
+            networkOrderLayer.vector = (uint)IPAddress.HostToNetworkOrder((int)vector);
+            networkOrderLayer.reserved = (ushort)IPAddress.HostToNetworkOrder((short)reserved);
+            networkOrderLayer.universe = (ushort)IPAddress.HostToNetworkOrder((short)universe);
+            return networkOrderLayer;
+        }
+
+        // Helper for endianness conversion (Network to Host)
+        public AFramingLayer ToHostOrder()
+        {
+            AFramingLayer hostOrderLayer = this;
+            hostOrderLayer.flength = (ushort)IPAddress.NetworkToHostOrder((short)flength);
+            hostOrderLayer.vector = (uint)IPAddress.NetworkToHostOrder((int)vector);
+            hostOrderLayer.reserved = (ushort)IPAddress.NetworkToHostOrder((short)reserved);
+            hostOrderLayer.universe = (ushort)IPAddress.NetworkToHostOrder((short)universe);
+            return hostOrderLayer;
         }
 
     }
@@ -148,7 +172,7 @@ namespace sACN
 
         public int GetStartCode()
         {
-            return (int)prop_val[512];
+            return prop_val[512];
         }
 
         public void Split(out int Values, out int StartCode)
@@ -166,6 +190,27 @@ namespace sACN
             length = (ushort)(flength & 0x0FFF);
 
 
+        }
+
+        public ADMPLayer ToNetworkOrder()
+        {
+            ADMPLayer networkOrderLayer = this;
+            networkOrderLayer.flength = (ushort)IPAddress.HostToNetworkOrder((short)flength);
+            networkOrderLayer.first_addr = (ushort)IPAddress.HostToNetworkOrder((short)first_addr);
+            networkOrderLayer.addr_inc = (ushort)IPAddress.HostToNetworkOrder((short)addr_inc);
+            networkOrderLayer.prop_val_cnt = (ushort)IPAddress.HostToNetworkOrder((short)prop_val_cnt);
+            return networkOrderLayer;
+        }
+
+        // Helper for endianness conversion (Network to Host)
+        public ADMPLayer ToHostOrder()
+        {
+            ADMPLayer hostOrderLayer = this;
+            hostOrderLayer.flength = (ushort)IPAddress.NetworkToHostOrder((short)flength);
+            hostOrderLayer.first_addr = (ushort)IPAddress.NetworkToHostOrder((short)first_addr);
+            hostOrderLayer.addr_inc = (ushort)IPAddress.HostToNetworkOrder((short)addr_inc);
+            hostOrderLayer.prop_val_cnt = (ushort)IPAddress.NetworkToHostOrder((short)prop_val_cnt);
+            return hostOrderLayer;
         }
     }
 
