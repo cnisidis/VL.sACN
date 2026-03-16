@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+
+<!-- For more info see: -->
+<!-- https://thegraybook.vvvv.org/reference/extending/publishing.html -->
+<!-- https://learn.microsoft.com/en-us/nuget/reference/nuspec -->
+
+<package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
+  <metadata>
+    <id>VL.sACN</id>
+    <!-- For more about versions see: https://thegraybook.vvvv.org/reference/extending/publishing.html#version -->
+    <version>1.0.0</version>
+    <title>VL.sACN</title>
+    <!-- Provide authors, projectUrl (website) and repository url--> 
+    <authors></authors>
+    <projectUrl></projectUrl>
+    <repository type="git" url="https://github.com/cnisidis/VL.sACN.git" />
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <!-- Provide description and tags-->
+    <description></description>
+    <tags>VL</tags>
+    <license type="expression">Apache License 2.0</license>
+    <icon>icon\nugeticon.png</icon>
+    <readme>README.md</readme>
+  </metadata>
+  <files>
+    <file src="..\lib\**\*.dll" target="lib\" exclude="" />
+	  <!-- <file src="..\runtimes\**\*.dll" target="runtimes\" exclude="" /> -->
+    <file src="..\*.vl" target="" exclude="" />
+    <file src="..\help\**" target="help\" exclude="" />
+    <file src="nugeticon.png" target="icon\" />
+    <file src="..\README.md" target="docs\" />
+  </files>
+</package>
