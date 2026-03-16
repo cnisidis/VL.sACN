@@ -1366,5 +1366,5 @@
   <NugetDependency Id="QdIchszGtonN5nxGF7jVfn" Location="VL.IO.ArtNet" Version="2.1.2" />
   <NugetDependency Id="KGohQnewmLNMojba0FODnE" Location="VL.sACN" Version="0.0.0" />
   <PlatformDependency Id="QmyLt1ksRUoMRhxCdEKKla" Location="System.Net.Sockets" />
-  <PlatformDependency Id="THaddeKwxF1Mryn0f8m4Ys" Location="./src/sACN/bin/Debug/net8.0/sACN.dll" />
+  <PlatformDependency Id="DiL2zZAw1N1PX6LX1GRGQN" Location="./lib/net8.0/sACN.dll" />
 </Document>
