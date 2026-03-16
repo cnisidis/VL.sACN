@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="K3F46xHd6GFOnLEP1dyOFG" LanguageVersion="2025.7.1-0154-ge6c16c963d" Version="0.128">
+<Document xmlns:p="property" xmlns:r="reflection" Id="K3F46xHd6GFOnLEP1dyOFG" LanguageVersion="2025.7.0" Version="0.128">
   <Patch Id="QsQvwCk77PWL1vaNjOlp3p">
     <Canvas Id="FQkET4AXeTvL6zQU6hI74U" DefaultCategory="VL.sACN" CanvasType="FullCategory">
       <Canvas Id="IYs3jKKGUKWOuxIrcVuonP" Name="UDP" Position="809,162">
@@ -1213,11 +1213,6 @@
             <Pin Id="BjM2rXvNAswLLPFqW43Mni" Name="Remote Address" Kind="InputPin" />
             <Pin Id="QtDF5dMd6m4MlI9bxBfq7k" Name="Send" Kind="InputPin" DefaultValue="True" />
           </Patch>
-          <!--
-
-    ************************  ************************
-
--->
           <ProcessDefinition Id="MUSFFjja1XeLowCIBtsZIj">
             <Fragment Id="Ir4cN4U2Xx8My6zVaLpjx6" Patch="BFFniKpWYRpLwPpZOt60I0" Enabled="true" />
             <Fragment Id="DzIpKT0oFW5MBJEpm6vACg" Patch="IWvPMk6aAGDQRm0DchsbcY" Enabled="true" />
@@ -1325,11 +1320,6 @@
             <Pin Id="O2PjUMfa2RvLnzm8AMKtUy" Name="Remote Addresses" Kind="InputPin" />
             <Pin Id="HR9A8ejTRhqPIHbVAZANx1" Name="Send" Kind="InputPin" />
           </Patch>
-          <!--
-
-    ************************  ************************
-
--->
           <ProcessDefinition Id="AyKfiQ2c5cjQS4F4Bdm6UK">
             <Fragment Id="I9Uj0PObnEGMYpYICP2hCF" Patch="MEBRwbnwHhdQa7V7vayFKq" Enabled="true" />
             <Fragment Id="PeBWjyUmAf8N23SDaOUzns" Patch="ETRpVr3FWqYLpl9N40D5ck" Enabled="true" />
@@ -1372,9 +1362,9 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="LLtAAq1ep34N1b1CfPDXtR" Location="VL.CoreLib" Version="2025.7.1-0154-ge6c16c963d" />
+  <NugetDependency Id="LLtAAq1ep34N1b1CfPDXtR" Location="VL.CoreLib" Version="2025.7.0" />
   <NugetDependency Id="QdIchszGtonN5nxGF7jVfn" Location="VL.IO.ArtNet" Version="2.1.2" />
   <NugetDependency Id="KGohQnewmLNMojba0FODnE" Location="VL.sACN" Version="0.0.0" />
   <PlatformDependency Id="QmyLt1ksRUoMRhxCdEKKla" Location="System.Net.Sockets" />
-  <ProjectDependency Id="RWtaVIKZFptQAMDIhpLSC2" Location="./csharp/sACN/sACN.csproj" />
+  <PlatformDependency Id="THaddeKwxF1Mryn0f8m4Ys" Location="./src/sACN/bin/Debug/net8.0/sACN.dll" />
 </Document>
