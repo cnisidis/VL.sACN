@@ -4,6 +4,7 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <GenerateDocumentationFile>True</GenerateDocumentationFile>
+    <BaseOutputPath>${workspaceFolder}/../../../lib</BaseOutputPath>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="VL.Core" Version="2025.7.0" />

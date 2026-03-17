@@ -567,14 +567,14 @@
     ************************ JoinMulticastGroup ************************
 
 -->
-      <Node Name="JoinMulticastGroup" Bounds="1450,158,126,80" Id="KNf62YaAQktMXcBfQPKkAx">
+      <Node Name="JoinMulticastGroup" Bounds="1450,155,126,83" Id="KNf62YaAQktMXcBfQPKkAx">
         <p:NodeReference>
           <Choice Kind="OperationDefinition" Name="Operation" />
           <CategoryReference Kind="Category" Name="Primitive" />
         </p:NodeReference>
         <p:HideCategory p:Type="Boolean">false</p:HideCategory>
         <Patch Id="Lo3gpDn641VOz9DXhJoP8J">
-          <Node Bounds="1462,187,102,26" AutoConnect="true" Id="P8Pv2ammk47LVOBPstENwz">
+          <Node Bounds="1462,187,102,19" AutoConnect="true" Id="P8Pv2ammk47LVOBPstENwz">
             <p:NodeReference LastCategoryFullName="System.Net.Sockets.UdpClient" LastDependency="System.Net.Sockets.dll">
               <Choice Kind="OperationNode" Name="JoinMulticastGroup" />
               <FullNameCategoryReference ID="System.Net.Sockets.UdpClient" />
@@ -971,14 +971,14 @@
     ************************ dmp ************************
 
 -->
-      <Node Name="dmp" Bounds="745,230,120,80" Id="CHlvtW2m0mOL4PNHwKq3c7">
+      <Node Name="dmp" Bounds="745,227,120,83" Id="CHlvtW2m0mOL4PNHwKq3c7">
         <p:NodeReference>
           <Choice Kind="OperationDefinition" Name="Operation" />
           <CategoryReference Kind="Category" Name="Primitive" />
         </p:NodeReference>
         <p:HideCategory p:Type="Boolean">false</p:HideCategory>
         <Patch Id="KbhWIC3KfxGMu9WL8Lpz6x">
-          <Node Bounds="766,259,39,26" AutoConnect="true" Id="OcWfDOOGFlNO1V4S6d8n2e">
+          <Node Bounds="766,259,39,19" AutoConnect="true" Id="OcWfDOOGFlNO1V4S6d8n2e">
             <p:NodeReference LastCategoryFullName="sACN.Structs.Packet" LastDependency="sACN.csproj">
               <Choice Kind="OperationNode" Name="dmp" />
               <FullNameCategoryReference ID="sACN.Structs.Packet" />
@@ -1367,4 +1367,5 @@
   <NugetDependency Id="KGohQnewmLNMojba0FODnE" Location="VL.sACN" Version="0.0.0" />
   <PlatformDependency Id="QmyLt1ksRUoMRhxCdEKKla" Location="System.Net.Sockets" />
   <PlatformDependency Id="DiL2zZAw1N1PX6LX1GRGQN" Location="./lib/net8.0/sACN.dll" />
+  <PlatformDependency Id="BQundPfSgvrPbT2DtBIL9V" Location="./lib/Release/net8.0/sACN.dll" />
 </Document>
