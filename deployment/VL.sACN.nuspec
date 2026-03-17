@@ -18,7 +18,7 @@
     <!-- Provide description and tags-->
     <description></description>
     <tags>VL</tags>
-    <license type="expression">Apache License 2.0</license>
+    <license type="expression">Apache-2.0</license>
     <icon>icon\nugeticon.png</icon>
     <readme>README.md</readme>
   </metadata>
