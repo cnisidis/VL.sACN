@@ -12,7 +12,7 @@
     <title>VL.sACN</title>
     <!-- Provide authors, projectUrl (website) and repository url--> 
     <authors>cnisidis</authors>
-    <projectUrl></projectUrl>
+    <projectUrl>https://www.nisidis.com/lab/taming-the-machine-industrial-robotics-for-the-stage-the-kuka-bridge</projectUrl>
     <repository type="git" url="https://github.com/cnisidis/VL.sACN.git" />
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <!-- Provide description and tags-->
