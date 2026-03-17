@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="K3F46xHd6GFOnLEP1dyOFG" LanguageVersion="2025.7.1-0154-ge6c16c963d" Version="0.128">
+<Document xmlns:p="property" xmlns:r="reflection" Id="K3F46xHd6GFOnLEP1dyOFG" LanguageVersion="2025.7.0" Version="0.128">
   <Patch Id="QsQvwCk77PWL1vaNjOlp3p">
     <Canvas Id="FQkET4AXeTvL6zQU6hI74U" DefaultCategory="VL.sACN" CanvasType="FullCategory">
       <Canvas Id="IYs3jKKGUKWOuxIrcVuonP" Name="UDP" Position="809,162">
@@ -567,14 +567,14 @@
     ************************ JoinMulticastGroup ************************
 
 -->
-      <Node Name="JoinMulticastGroup" Bounds="1450,158,126,80" Id="KNf62YaAQktMXcBfQPKkAx">
+      <Node Name="JoinMulticastGroup" Bounds="1450,155,126,83" Id="KNf62YaAQktMXcBfQPKkAx">
         <p:NodeReference>
           <Choice Kind="OperationDefinition" Name="Operation" />
           <CategoryReference Kind="Category" Name="Primitive" />
         </p:NodeReference>
         <p:HideCategory p:Type="Boolean">false</p:HideCategory>
         <Patch Id="Lo3gpDn641VOz9DXhJoP8J">
-          <Node Bounds="1462,187,102,26" AutoConnect="true" Id="P8Pv2ammk47LVOBPstENwz">
+          <Node Bounds="1462,187,102,19" AutoConnect="true" Id="P8Pv2ammk47LVOBPstENwz">
             <p:NodeReference LastCategoryFullName="System.Net.Sockets.UdpClient" LastDependency="System.Net.Sockets.dll">
               <Choice Kind="OperationNode" Name="JoinMulticastGroup" />
               <FullNameCategoryReference ID="System.Net.Sockets.UdpClient" />
@@ -971,14 +971,14 @@
     ************************ dmp ************************
 
 -->
-      <Node Name="dmp" Bounds="745,230,120,80" Id="CHlvtW2m0mOL4PNHwKq3c7">
+      <Node Name="dmp" Bounds="745,227,120,83" Id="CHlvtW2m0mOL4PNHwKq3c7">
         <p:NodeReference>
           <Choice Kind="OperationDefinition" Name="Operation" />
           <CategoryReference Kind="Category" Name="Primitive" />
         </p:NodeReference>
         <p:HideCategory p:Type="Boolean">false</p:HideCategory>
         <Patch Id="KbhWIC3KfxGMu9WL8Lpz6x">
-          <Node Bounds="766,259,39,26" AutoConnect="true" Id="OcWfDOOGFlNO1V4S6d8n2e">
+          <Node Bounds="766,259,39,19" AutoConnect="true" Id="OcWfDOOGFlNO1V4S6d8n2e">
             <p:NodeReference LastCategoryFullName="sACN.Structs.Packet" LastDependency="sACN.csproj">
               <Choice Kind="OperationNode" Name="dmp" />
               <FullNameCategoryReference ID="sACN.Structs.Packet" />
@@ -1213,11 +1213,6 @@
             <Pin Id="BjM2rXvNAswLLPFqW43Mni" Name="Remote Address" Kind="InputPin" />
             <Pin Id="QtDF5dMd6m4MlI9bxBfq7k" Name="Send" Kind="InputPin" DefaultValue="True" />
           </Patch>
-          <!--
-
-    ************************  ************************
-
--->
           <ProcessDefinition Id="MUSFFjja1XeLowCIBtsZIj">
             <Fragment Id="Ir4cN4U2Xx8My6zVaLpjx6" Patch="BFFniKpWYRpLwPpZOt60I0" Enabled="true" />
             <Fragment Id="DzIpKT0oFW5MBJEpm6vACg" Patch="IWvPMk6aAGDQRm0DchsbcY" Enabled="true" />
@@ -1325,11 +1320,6 @@
             <Pin Id="O2PjUMfa2RvLnzm8AMKtUy" Name="Remote Addresses" Kind="InputPin" />
             <Pin Id="HR9A8ejTRhqPIHbVAZANx1" Name="Send" Kind="InputPin" />
           </Patch>
-          <!--
-
-    ************************  ************************
-
--->
           <ProcessDefinition Id="AyKfiQ2c5cjQS4F4Bdm6UK">
             <Fragment Id="I9Uj0PObnEGMYpYICP2hCF" Patch="MEBRwbnwHhdQa7V7vayFKq" Enabled="true" />
             <Fragment Id="PeBWjyUmAf8N23SDaOUzns" Patch="ETRpVr3FWqYLpl9N40D5ck" Enabled="true" />
@@ -1372,9 +1362,10 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="LLtAAq1ep34N1b1CfPDXtR" Location="VL.CoreLib" Version="2025.7.1-0154-ge6c16c963d" />
+  <NugetDependency Id="LLtAAq1ep34N1b1CfPDXtR" Location="VL.CoreLib" Version="2025.7.0" />
   <NugetDependency Id="QdIchszGtonN5nxGF7jVfn" Location="VL.IO.ArtNet" Version="2.1.2" />
   <NugetDependency Id="KGohQnewmLNMojba0FODnE" Location="VL.sACN" Version="0.0.0" />
   <PlatformDependency Id="QmyLt1ksRUoMRhxCdEKKla" Location="System.Net.Sockets" />
-  <ProjectDependency Id="RWtaVIKZFptQAMDIhpLSC2" Location="./csharp/sACN/sACN.csproj" />
+  <PlatformDependency Id="DiL2zZAw1N1PX6LX1GRGQN" Location="./lib/net8.0/sACN.dll" />
+  <PlatformDependency Id="BQundPfSgvrPbT2DtBIL9V" Location="./lib/Release/net8.0/sACN.dll" />
 </Document>
