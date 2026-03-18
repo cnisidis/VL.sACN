@@ -8,14 +8,14 @@
     ************************ JoinMulticastGroup ************************
 
 -->
-        <Node Name="JoinMulticastGroup" Bounds="609,427,126,80" Id="LgUfoUbZ5ayQY6voWGUkF9">
+        <Node Name="JoinMulticastGroup" Bounds="553,400,126,80" Id="LgUfoUbZ5ayQY6voWGUkF9">
           <p:NodeReference>
             <Choice Kind="OperationDefinition" Name="Operation" />
             <CategoryReference Kind="Category" Name="Primitive" />
           </p:NodeReference>
           <p:HideCategory p:Type="Boolean">false</p:HideCategory>
           <Patch Id="G58F2VQtJRUOz9Ll4tPX2I">
-            <Node Bounds="621,456,102,26" AutoConnect="true" Id="PbVlSbvcRFfLRccpUrgb33">
+            <Node Bounds="565,429,102,26" AutoConnect="true" Id="PbVlSbvcRFfLRccpUrgb33">
               <p:NodeReference LastCategoryFullName="System.Net.Sockets.UdpClient" LastDependency="System.Net.Sockets.dll">
                 <Choice Kind="OperationNode" Name="JoinMulticastGroup" />
                 <FullNameCategoryReference ID="System.Net.Sockets.UdpClient" />
@@ -409,14 +409,14 @@
     ************************ JoinMulticastGroup ************************
 
 -->
-        <Node Name="JoinMulticastGroup" Bounds="788,417,126,80" Id="LiX92AEfzh6OBOMgZkmG65">
+        <Node Name="JoinMulticastGroup" Bounds="722,400,126,80" Id="LiX92AEfzh6OBOMgZkmG65">
           <p:NodeReference>
             <Choice Kind="OperationDefinition" Name="Operation" />
             <CategoryReference Kind="Category" Name="Primitive" />
           </p:NodeReference>
           <p:HideCategory p:Type="Boolean">false</p:HideCategory>
           <Patch Id="CHE2rqc9ajTMmqgLEqpRcs">
-            <Node Bounds="800,446,102,26" AutoConnect="true" Id="GaC1jzy0NCxQYZRw4UpJJq">
+            <Node Bounds="734,429,102,26" AutoConnect="true" Id="GaC1jzy0NCxQYZRw4UpJJq">
               <p:NodeReference LastCategoryFullName="System.Net.Sockets.UdpClient" LastDependency="System.Net.Sockets.dll" OverloadStrategy="AllPinsThatAreNotCommon">
                 <Choice Kind="OperationNode" Name="JoinMulticastGroup" />
                 <FullNameCategoryReference ID="System.Net.Sockets.UdpClient" />
@@ -440,14 +440,14 @@
     ************************ JoinMulticastGroup ************************
 
 -->
-        <Node Name="JoinMulticastGroup" Bounds="935,410,126,80" Id="PD3wiFeRlvfMReLBgwTmNG">
+        <Node Name="JoinMulticastGroup" Bounds="894,400,126,80" Id="PD3wiFeRlvfMReLBgwTmNG">
           <p:NodeReference>
             <Choice Kind="OperationDefinition" Name="Operation" />
             <CategoryReference Kind="Category" Name="Primitive" />
           </p:NodeReference>
           <p:HideCategory p:Type="Boolean">false</p:HideCategory>
           <Patch Id="FnmyYYGqboWPTtWQcXmXwp">
-            <Node Bounds="947,439,102,26" AutoConnect="true" Id="T13lGpPmUFaPnJFm6c0n5k">
+            <Node Bounds="906,429,102,26" AutoConnect="true" Id="T13lGpPmUFaPnJFm6c0n5k">
               <p:NodeReference LastCategoryFullName="System.Net.Sockets.UdpClient" LastDependency="System.Net.Sockets.dll" OverloadStrategy="AllPinsThatAreNotCommon">
                 <Choice Kind="OperationNode" Name="JoinMulticastGroup" />
                 <FullNameCategoryReference ID="System.Net.Sockets.UdpClient" />
@@ -472,7 +472,7 @@
     ************************ Universe ************************
 
 -->
-      <Node Name="Universe" Bounds="992,350" Id="B398QonqLxbL2e0vaYizER">
+      <Node Name="Universe" Bounds="981,260" Id="B398QonqLxbL2e0vaYizER">
         <p:NodeReference>
           <Choice Kind="ContainerDefinition" />
         </p:NodeReference>
@@ -567,14 +567,14 @@
     ************************ JoinMulticastGroup ************************
 
 -->
-      <Node Name="JoinMulticastGroup" Bounds="1450,155,126,83" Id="KNf62YaAQktMXcBfQPKkAx">
+      <Node Name="JoinMulticastGroup" Bounds="1245,180,126,84" Id="KNf62YaAQktMXcBfQPKkAx">
         <p:NodeReference>
           <Choice Kind="OperationDefinition" Name="Operation" />
           <CategoryReference Kind="Category" Name="Primitive" />
         </p:NodeReference>
         <p:HideCategory p:Type="Boolean">false</p:HideCategory>
         <Patch Id="Lo3gpDn641VOz9DXhJoP8J">
-          <Node Bounds="1462,187,102,19" AutoConnect="true" Id="P8Pv2ammk47LVOBPstENwz">
+          <Node Bounds="1257,212,102,26" AutoConnect="true" Id="P8Pv2ammk47LVOBPstENwz">
             <p:NodeReference LastCategoryFullName="System.Net.Sockets.UdpClient" LastDependency="System.Net.Sockets.dll">
               <Choice Kind="OperationNode" Name="JoinMulticastGroup" />
               <FullNameCategoryReference ID="System.Net.Sockets.UdpClient" />
@@ -593,7 +593,7 @@
     ************************ MulticastGroups ************************
 
 -->
-      <Node Name="MulticastGroups" Bounds="1697,220" Id="DfuGUoyACItQcUKCDriAqA">
+      <Node Name="MulticastGroups" Bounds="1245,310" Id="DfuGUoyACItQcUKCDriAqA">
         <p:NodeReference>
           <Choice Kind="ContainerDefinition" />
         </p:NodeReference>
@@ -971,14 +971,14 @@
     ************************ dmp ************************
 
 -->
-      <Node Name="dmp" Bounds="745,227,120,83" Id="CHlvtW2m0mOL4PNHwKq3c7">
+      <Node Name="dmp" Bounds="786,270,120,84" Id="CHlvtW2m0mOL4PNHwKq3c7">
         <p:NodeReference>
           <Choice Kind="OperationDefinition" Name="Operation" />
           <CategoryReference Kind="Category" Name="Primitive" />
         </p:NodeReference>
         <p:HideCategory p:Type="Boolean">false</p:HideCategory>
         <Patch Id="KbhWIC3KfxGMu9WL8Lpz6x">
-          <Node Bounds="766,259,39,19" AutoConnect="true" Id="OcWfDOOGFlNO1V4S6d8n2e">
+          <Node Bounds="807,302,39,26" AutoConnect="true" Id="OcWfDOOGFlNO1V4S6d8n2e">
             <p:NodeReference LastCategoryFullName="sACN.Structs.Packet" LastDependency="sACN.csproj">
               <Choice Kind="OperationNode" Name="dmp" />
               <FullNameCategoryReference ID="sACN.Structs.Packet" />
@@ -990,86 +990,6 @@
           <Pin Id="Ohjz5RKuzboOEETeLB0QOg" Name="Input" Kind="InputPin" />
           <Pin Id="GBCiZeaqVhmQbH2jkVfYgk" Name="Output" Kind="OutputPin" />
           <Pin Id="C7apuhauqnWPFG83LpNjbm" Name="Dmp" Kind="OutputPin" />
-        </Patch>
-      </Node>
-      <!--
-
-    ************************ DMP ************************
-
--->
-      <Node Name="DMP" Bounds="996,223" Id="Q8rSoZ2ggjQOWshSdQwd4o">
-        <p:NodeReference>
-          <Choice Kind="ForwardDefinition" Name="Forward" />
-          <CategoryReference Kind="Category" Name="Primitive" />
-        </p:NodeReference>
-        <p:TypeAnnotation LastCategoryFullName="sACN.Structs" LastDependency="sACN.csproj">
-          <Choice Kind="TypeFlag" Name="DMP" />
-          <FullNameCategoryReference ID="sACN.Structs" />
-          <AssemblyReference ID="sACN.csproj" />
-        </p:TypeAnnotation>
-        <Patch Id="R5OA0dDEWrcOAldn7COuYQ">
-          <Canvas Id="SMr3i4TUWOBPaQTTmtqaBW" BordersChecked="false" CanvasType="Group" />
-          <ProcessDefinition Id="BSH6E9f3Z7FOSabNCqaDJ3" IsHidden="true" />
-        </Patch>
-      </Node>
-      <!--
-
-    ************************ Frame ************************
-
--->
-      <Node Name="Frame" Bounds="996,180" Id="A3hYOfj98F6NSUPVSmikEM">
-        <p:NodeReference>
-          <Choice Kind="ForwardDefinition" Name="Forward" />
-          <CategoryReference Kind="Category" Name="Primitive" />
-        </p:NodeReference>
-        <p:TypeAnnotation LastCategoryFullName="sACN.Structs" LastDependency="sACN.csproj">
-          <Choice Kind="TypeFlag" Name="Frame" />
-          <FullNameCategoryReference ID="sACN.Structs" />
-          <AssemblyReference ID="sACN.csproj" />
-        </p:TypeAnnotation>
-        <Patch Id="RMxBBgqLEdxN0xLNpPh2rm">
-          <Canvas Id="LUc3inLycbMMprtDa3KZgW" BordersChecked="false" CanvasType="Group" />
-          <ProcessDefinition Id="TpZGgs27r8POKE7nCVwTUm" IsHidden="true" />
-        </Patch>
-      </Node>
-      <!--
-
-    ************************ Root ************************
-
--->
-      <Node Name="Root" Bounds="996,140" Id="Ph5L6z3DbgpLtcBdljUfXc">
-        <p:NodeReference>
-          <Choice Kind="ForwardDefinition" Name="Forward" />
-          <CategoryReference Kind="Category" Name="Primitive" />
-        </p:NodeReference>
-        <p:TypeAnnotation LastCategoryFullName="sACN.Structs" LastDependency="sACN.csproj">
-          <Choice Kind="TypeFlag" Name="Root" />
-          <FullNameCategoryReference ID="sACN.Structs" />
-          <AssemblyReference ID="sACN.csproj" />
-        </p:TypeAnnotation>
-        <Patch Id="AWqvwbAZJYBProv22uwc9X">
-          <Canvas Id="NRDzjDpJ2yxMTKM1ZEZ17N" BordersChecked="false" CanvasType="Group" />
-          <ProcessDefinition Id="HgLvldd3LYRPo1uI4fLkU5" IsHidden="true" />
-        </Patch>
-      </Node>
-      <!--
-
-    ************************ Packet ************************
-
--->
-      <Node Name="Packet" Bounds="996,90" Id="LnNotSKoXrpM1XAv71k1fD">
-        <p:NodeReference>
-          <Choice Kind="ForwardDefinition" Name="Forward" />
-          <CategoryReference Kind="Category" Name="Primitive" />
-        </p:NodeReference>
-        <p:TypeAnnotation LastCategoryFullName="sACN.Structs" LastDependency="sACN.csproj">
-          <Choice Kind="TypeFlag" Name="Packet" />
-          <FullNameCategoryReference ID="sACN.Structs" />
-          <AssemblyReference ID="sACN.csproj" />
-        </p:TypeAnnotation>
-        <Patch Id="KguZZrh4kMmMSZdb1BVLCd">
-          <Canvas Id="QOF8uy8T2UsMPAXpA7jEKU" BordersChecked="false" CanvasType="Group" />
-          <ProcessDefinition Id="BjfOz6uaCj2PUqYc5cX2Is" IsHidden="true" />
         </Patch>
       </Node>
       <!--
@@ -1123,7 +1043,7 @@
     ************************ Unicast ************************
 
 -->
-      <Node Name="Unicast" Bounds="996,400" Id="Tq8MjX6biEbQaD8VgGtaec">
+      <Node Name="Unicast" Bounds="981,310" Id="Tq8MjX6biEbQaD8VgGtaec">
         <p:NodeReference>
           <Choice Kind="ContainerDefinition" />
         </p:NodeReference>
@@ -1239,7 +1159,7 @@
     ************************ Multicast ************************
 
 -->
-      <Node Name="Multicast" Bounds="996,450" Id="OjM91qJG5vaM2C45B6Ch90">
+      <Node Name="Multicast" Bounds="981,360" Id="OjM91qJG5vaM2C45B6Ch90">
         <p:NodeReference>
           <Choice Kind="ContainerDefinition" />
         </p:NodeReference>
@@ -1340,6 +1260,86 @@
           <Link Id="IcU8awVlygbLp0EP61U8nt" Ids="Bn7Pxtabr0XL859DXrdrIT,VtduB5Cp8ihQNUlB8CiRJ0" />
         </Patch>
       </Node>
+      <!--
+
+    ************************ Packet ************************
+
+-->
+      <Node Name="Packet" Bounds="981,75" Id="Ghn4dE71zLLQPyoqoO2RFb">
+        <p:NodeReference>
+          <Choice Kind="ForwardDefinition" Name="Forward" />
+          <CategoryReference Kind="Category" Name="Primitive" />
+        </p:NodeReference>
+        <p:TypeAnnotation LastCategoryFullName="sACN.Structs" LastDependency="sACN.dll">
+          <Choice Kind="TypeFlag" Name="Packet" />
+          <FullNameCategoryReference ID="sACN.Structs" />
+          <AssemblyReference ID="sACN.dll" />
+        </p:TypeAnnotation>
+        <Patch Id="Ha4EugfBjqjLieumKSEYAf">
+          <Canvas Id="Im0yZ21I9HSLY5521UQ2zA" BordersChecked="false" CanvasType="Group" />
+          <ProcessDefinition Id="NranJCUDATEO0g05pAwalT" IsHidden="true" />
+        </Patch>
+      </Node>
+      <!--
+
+    ************************ Root ************************
+
+-->
+      <Node Name="Root" Bounds="981,120" Id="Qp1S1a5yaYRNRUwnOI2y4P">
+        <p:NodeReference>
+          <Choice Kind="ForwardDefinition" Name="Forward" />
+          <CategoryReference Kind="Category" Name="Primitive" />
+        </p:NodeReference>
+        <p:TypeAnnotation LastCategoryFullName="sACN.Structs" LastDependency="sACN.dll">
+          <Choice Kind="TypeFlag" Name="Root" />
+          <FullNameCategoryReference ID="sACN.Structs" />
+          <AssemblyReference ID="sACN.dll" />
+        </p:TypeAnnotation>
+        <Patch Id="SHDuAA9YByUN6Ys53kJysH">
+          <Canvas Id="VWNxsJjSW9kPUNLU1gIP6t" BordersChecked="false" CanvasType="Group" />
+          <ProcessDefinition Id="VNrTNNfM8K1MXIirJd1Lrc" IsHidden="true" />
+        </Patch>
+      </Node>
+      <!--
+
+    ************************ Frame ************************
+
+-->
+      <Node Name="Frame" Bounds="981,165" Id="TTRVSuyf5pQOErAVlAOxtq">
+        <p:NodeReference>
+          <Choice Kind="ForwardDefinition" Name="Forward" />
+          <CategoryReference Kind="Category" Name="Primitive" />
+        </p:NodeReference>
+        <p:TypeAnnotation LastCategoryFullName="sACN.Structs" LastDependency="sACN.dll">
+          <Choice Kind="TypeFlag" Name="Frame" />
+          <FullNameCategoryReference ID="sACN.Structs" />
+          <AssemblyReference ID="sACN.dll" />
+        </p:TypeAnnotation>
+        <Patch Id="IBf3zFbrvnhOPeTnIRIQxE">
+          <Canvas Id="HYgh2XQrSJMQEm5SNycmJq" BordersChecked="false" CanvasType="Group" />
+          <ProcessDefinition Id="OWO8r2PL8LaM4a8r44eM5j" IsHidden="true" />
+        </Patch>
+      </Node>
+      <!--
+
+    ************************ DMP ************************
+
+-->
+      <Node Name="DMP" Bounds="981,210" Id="MNgsY9FySP2NsmLCTn0Wvn">
+        <p:NodeReference>
+          <Choice Kind="ForwardDefinition" Name="Forward" />
+          <CategoryReference Kind="Category" Name="Primitive" />
+        </p:NodeReference>
+        <p:TypeAnnotation LastCategoryFullName="sACN.Structs" LastDependency="sACN.dll">
+          <Choice Kind="TypeFlag" Name="DMP" />
+          <FullNameCategoryReference ID="sACN.Structs" />
+          <AssemblyReference ID="sACN.dll" />
+        </p:TypeAnnotation>
+        <Patch Id="GG2nqnfRXvDOa6azRvUrOY">
+          <Canvas Id="DYt5wRX3acBNZmwi1iUADQ" BordersChecked="false" CanvasType="Group" />
+          <ProcessDefinition Id="D7iROVvI9ugOJbsTBUTvl5" IsHidden="true" />
+        </Patch>
+      </Node>
     </Canvas>
     <!--
 
@@ -1366,6 +1366,5 @@
   <NugetDependency Id="QdIchszGtonN5nxGF7jVfn" Location="VL.IO.ArtNet" Version="2.1.2" />
   <NugetDependency Id="KGohQnewmLNMojba0FODnE" Location="VL.sACN" Version="0.0.0" />
   <PlatformDependency Id="QmyLt1ksRUoMRhxCdEKKla" Location="System.Net.Sockets" />
-  <PlatformDependency Id="DiL2zZAw1N1PX6LX1GRGQN" Location="./lib/net8.0/sACN.dll" />
-  <PlatformDependency Id="BQundPfSgvrPbT2DtBIL9V" Location="./lib/Release/net8.0/sACN.dll" />
+  <PlatformDependency Id="VW5gOc8UkbTPWpTg9cofzI" Location="./lib/net8.0/sACN.dll" />
 </Document>
