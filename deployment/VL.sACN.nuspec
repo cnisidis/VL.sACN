@@ -8,7 +8,7 @@
   <metadata>
     <id>VL.sACN</id>
     <!-- For more about versions see: https://thegraybook.vvvv.org/reference/extending/publishing.html#version -->
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <title>VL.sACN</title>
     <!-- Provide authors, projectUrl (website) and repository url--> 
     <authors>cnisidis</authors>
